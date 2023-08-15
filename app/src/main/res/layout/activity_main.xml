@@ -44,44 +44,44 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnStart"
+        android:id="@+id/buttonstart"
         android:layout_width="300dp"
         android:layout_height="0dp"
-        android:layout_above="@+id/btnStop"
+        android:layout_above="@+id/buttonstop"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
         android:background="@drawable/bgbutton"
         android:text="Start"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnStop"
+        app:layout_constraintBottom_toTopOf="@+id/buttonstop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnStop"
+        android:id="@+id/buttonstop"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
-        android:background="@drawable/btnstopbg"
+        android:background="@drawable/bgbutton"
         android:text="Stop"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnReset"
+        app:layout_constraintBottom_toTopOf="@+id/buttonreset"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/btnReset"
+        android:id="@+id/buttonreset"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
-        android:background="@drawable/btnstopbg"
+        android:background="@drawable/bgbutton"
         android:text="Reset"
         android:textColor="@color/black"
         android:textSize="20sp"

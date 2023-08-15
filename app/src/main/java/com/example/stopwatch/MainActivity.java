@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
     private Chronometer chronometer;
     private long PauseOffSet = 0;
     private boolean isPlaying = false;
-    private Button start_btn;
-    private Button stop_btn;
-    private Button reset_btn;
+    private Button start_button;
+    private Button stop_button;
+    private Button reset_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,25 +26,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Let's select our element
         chronometer = findViewById(R.id.chronometer);
-        start_btn= findViewById(R.id.btnStart);
-        stop_btn = findViewById(R.id.btnStop);
-        reset_btn = findViewById(R.id.btnReset);
+        start_button= findViewById(R.id.buttonstart);
+        stop_button = findViewById(R.id.buttonstop);
+        reset_button = findViewById(R.id.buttonreset);
 
-        start_btn.setOnClickListener(v -> {
+        start_button.setOnClickListener(v -> {
                     chronometer.setBase(SystemClock.elapsedRealtime()- PauseOffSet);
                     chronometer.start();
                     isPlaying = true;
         });
 
 
-        stop_btn.setOnClickListener(v -> {
+        stop_button.setOnClickListener(v -> {
                 if(isPlaying){
                     chronometer.stop();
                     isPlaying = false;
                 }
         });
 
-        reset_btn.setOnClickListener(v -> {
+        reset_button.setOnClickListener(v -> {
             chronometer.setBase(SystemClock.elapsedRealtime());
         });
     }
